@@ -10,76 +10,84 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
     <!-- Google Fonts Roboto -->
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/mdb.min.css" />
-    <!-- Custom styles -->
-    <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-      <!--Main Navigation-->
-  <header>
-    <!-- Intro settings -->
-    <style>
-      /* Default height for small devices */
-      #intro {
-        height: 1000px;
-        /* Margin to fix overlapping fixed navbar */
-        margin-top: 0px;
-        margin-bottom: 0px;
-      }
-      @media (max-width: 991px) {
-              #intro {
-              /* Margin to fix overlapping fixed navbar */
-              margin-top: 0px;
-              margin-bottom: 0px;
-      	}
-      }
-    </style>
+<link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="shortcut icon" href="img/favicon.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Poppins" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/mdb.min.css" />
+  </head>
 
-    <!-- Background image -->
-    <div id="intro" class="p-5 text-center bg-image shadow-1-strong"
-      style="background-image: url('/img/IMG_2313.jpg');">
-      <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
-        <div class="d-flex justify-content-center align-items-center h-100">
-          <div class="text-white px-4">
-            <h1 class="mb-3">RSVP<br> September 29th, 2023</h1>
-
-            <i class="fas fa-heart"></i>
-
-            <p>Please fill out this form.</p>
-            <i class="fas fa-glass-cheers"></i><br>
-              <form>
-  <div class="form-row">
-    <div class="col-auto">
-      <input type="text" class="form-control" placeholder="First name & last initial">
-    </div>
-  </div>
-                   <div class="form-group row">
-    <div class="col-sm-2">Food selection(s):</div><br>
-    <div class="col-sm-10">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck1">
-        <label class="form-check-label" for="gridCheck1">
-          Poultry
-        </label>
+  <body>
+    <div class="mh-100 shadow-1-strong bg-image" style="background-image: url('/img/IMG_2313.jpg');">
+      <div class="container rounded" style="margin-bottom: 25px; margin-top: 25px; color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0.37);">
+        <div class="col-6 mx-auto">
+          <br>
+          <hr>
+          <h1 class="text-center">RSVP</h1><hr>
+           <form action="https://formspree.io/f/moqzpkop"
+           method="POST">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="First name and last initial:">
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="attending" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                  I will be attending.
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="attending" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                  I regretfully will not be attending.
+                </label>
+              </div>
+              <p></p>
+              <h5><u>Your food option(s):</u></h5>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="fowl">
+                <label class="form-check-label" for="inlineCheckbox1">Fowl</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="fish">
+                <label class="form-check-label" for="inlineCheckbox2">Fish</label>
+              </div>
+              <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="vegan">
+                  <label class="form-check-label" for="inlineCheckbox3">Vegan</label>
+                </div>
+              <p></p>
+              <hr>
+              <h6>If applicable:</h6>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="First name and last initial of +1 guest:">
+              </div>
+<h5><u>Food option(s) for guest:</u></h5>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="ginlineCheckbox1" value="fowl">
+                <label class="form-check-label" for="ginlineCheckbox1">Fowl</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="ginlineCheckbox2" value="fish">
+                <label class="form-check-label" for="ginlineCheckbox2">Fish</label>
+              </div>
+              <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="ginlineCheckbox3" value="vegan">
+                  <label class="form-check-label" for="ginlineCheckbox3">Vegan</label>
+                </div><hr>
+              <div class="form-group">
+                <a class="btn btn-block" style="color:rgb(255, 255, 255)"><u>Send</u> <i class="far fa-paper-plane"></i></a>
+              </div>
+              <hr><br>
+            </form>
       </div>
     </div>
-  </div>
-</form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Background image -->
-  </header>
-       
-  </main>
-  <!--Main layout-->
-   
-    </script>
-    <script type="text/javascript" src="js/mdb.min.js"></script>
-    <!-- Custom scripts -->
-    <script type="text/javascript" src="js/script.js"></script>
-</body>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
