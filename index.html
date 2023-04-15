@@ -15,35 +15,14 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-      <!--Main Navigation-->
-  <header>
-    <!-- Intro settings -->
-    <style>
-      /* Default height for small devices */
-      #intro {
-        height: 1000px;
-        /* Margin to fix overlapping fixed navbar */
-        margin-top: 0px;
-        margin-bottom: 0px;
-      }
-      @media (max-width: 991px) {
-              #intro {
-              /* Margin to fix overlapping fixed navbar */
-              margin-top: 0px;
-              margin-bottom: 0px;
-      	}
-      }
-    </style>
-
     <!-- Background image -->
-    <div id="intro" class="p-5 text-center bg-image shadow-1-strong"
-      style="background-image: url('/img/IMG_2313.jpg');">
-      <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
+    <div class="text-center bg-image" style="min-height: 100vh; background-image: url('/img/IMG_2313.jpg');">
+      <div class="mask" style="min-height: 100vh; background-color: rgba(0, 0, 0, 0.7);">
         <div class="d-flex justify-content-center align-items-center h-100">
           <div class="text-white px-4">
-            <h1 class="mb-3">Ian & Heather<br> September 29th, 2023</h1>
+            <h1 class="mb-3">Ian & Heather<br> September 29th, 2023</h1><hr>
             <!-- Time Counter -->
-            <h3 id="countbox1" class="my-4 p-4"></h3>
+            <h3 id="countbox1" class="my-4 p-4"></h3><hr>
 
             <i class="fas fa-heart"></i>
 
@@ -58,13 +37,6 @@
         </div>
       </div>
     </div>
-    <!-- Background image -->
-  </header>
-  
-      
-  </main>
-  <!--Main layout-->
-
 
   <script type="text/javascript">    
     var CDown = function() {
@@ -168,5 +140,6 @@
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- Custom scripts -->
     <script type="text/javascript" src="js/script.js"></script>
+
 </body>
 </html>
